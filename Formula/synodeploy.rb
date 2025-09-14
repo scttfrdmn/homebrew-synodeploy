@@ -5,13 +5,13 @@
 class Synodeploy < Formula
   desc "Deploy containers to Synology DSM 7.2+ with ease"
   homepage "https://github.com/scttfrdmn/synodeploy"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.5/synodeploy-Darwin-x86_64.tar.gz"
-      sha256 "11ed93e4162526dbca9313bd563fc45881276d4adb3890cc86a7c59424562c61"
+      url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.6/synodeploy-Darwin-x86_64.tar.gz"
+      sha256 "145d5b8c7c83526a41fe8d8e9432864e62e6cd19a01651c00ed2bd954688ef60"
 
       def install
         bin.install "synodeploy"
@@ -20,8 +20,8 @@ class Synodeploy < Formula
       end
     end
     on_arm do
-      url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.5/synodeploy-Darwin-arm64.tar.gz"
-      sha256 "7134331122821b04f26273994b2cd2ac18c13081cb4faa6232cde586f33c27e2"
+      url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.6/synodeploy-Darwin-arm64.tar.gz"
+      sha256 "8fd315539d3058994310406acecd8ce9d3b0d08192f8cbdb1a68bd22ac830579"
 
       def install
         bin.install "synodeploy"
@@ -34,8 +34,8 @@ class Synodeploy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.5/synodeploy-Linux-x86_64.tar.gz"
-        sha256 "02f91df258b9f0edc9ffe5541e2ccbc98eb8048e1012efb48049b4317051d33c"
+        url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.6/synodeploy-Linux-x86_64.tar.gz"
+        sha256 "da3edb5fc1d139d007c8436739fdde03e2fa6abf722d5b248a3f2cc7b0adf0af"
 
         def install
           bin.install "synodeploy"
@@ -46,8 +46,8 @@ class Synodeploy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.5/synodeploy-Linux-arm64.tar.gz"
-        sha256 "df61f11736bc3da90ea97bb1812932bd557386a4022f8ecd4f290a5eee80ae7e"
+        url "https://github.com/scttfrdmn/synodeploy/releases/download/v0.1.6/synodeploy-Linux-arm64.tar.gz"
+        sha256 "8a647ec7b11f80ef5bf82055a07273ab68833e12a5b1e196c8616871c71874b8"
 
         def install
           bin.install "synodeploy"
